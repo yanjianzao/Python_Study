@@ -9,6 +9,9 @@ class hand_config():
         self.dict_items = dict(self.con.items(section_name))
         return self.dict_items[key_name]
 
+if __name__ == '__main__':
+    hand = hand_config()
+    print(hand.read_config(section_name='App',key_name='token',filename="config.ini"))
 
 
 
