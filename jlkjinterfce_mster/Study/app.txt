@@ -1,0 +1,30 @@
+https://gatewaytest.jinlingkeji.cn/v9/auth/login?phone=15005163623&code=8888
+Host: gatewaytest.jinlingkeji.cn
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+channel_code: ios
+Accept: application/json, text/plain, */*
+Accept-Language: zh-cn
+User-Agent: %E7%BD%91%E4%B8%8A%E8%80%81%E5%B9%B4%E5%A4%A7%E5%AD%A6/2.8 CFNetwork/1128.0.1 Darwin/19.6.0
+app-version: 2.3.0
+source-type: IOS
+
+https://gatewaytest.jinlingkeji.cn/v9/major/api/user/getUser
+Host: gatewaytest.jinlingkeji.cn
+Accept-Encoding: gzip, deflate, br
+User-Agent: %E7%BD%91%E4%B8%8A%E8%80%81%E5%B9%B4%E5%A4%A7%E5%AD%A6/2.8 CFNetwork/1128.0.1 Darwin/19.6.0
+Content-Length: 0
+Connection: keep-alive
+channel_code: ios
+Accept: application/json, text/plain, */*
+Accept-Language: zh-cn
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1aWQiOjM0OTExMCwibG9naW5UaW1lIjoiMTYxNzI3MzY2NDQ0OCIsInBob25lIjoiMTUwMDUxNjM2MjMiLCJ0eXBlIjoiMCIsImV4cCI6MTYyNTA0OTY2NH0.Qn2OVGMVaWj70Sz666pHRfbHXmUDg3HLj9wWrCRF8ihmx3av8tVgy05uH6f7W030LeqRiEzkk3v5ksQF5oNvSg
+app-version: 2.3.0
+source-type: IOS
+
+https://gatewaytest.jinlingkeji.cn/v9/message/live/hot/list
+{
+  "pageSize": 8,
+  "pageNum": 1,
+  "type": 1
+}
