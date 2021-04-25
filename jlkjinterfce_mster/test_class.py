@@ -2,6 +2,8 @@ import requests
 import pytest
 import unittest
 import os,sys
+import logging
+import allure
 import json
 sys.path.append(os.getcwd())
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -22,6 +24,9 @@ class TestCase():
             print("登录成功")
     def teardown_class(self):
         print("teardown_class：所有用例执行之前，测试完成")
+
+    log = logging.getLogger('test_class')
+    log.info("aaa")
     def test_one(self):
         assert 1 == 1
         print("用例1是否成功")
