@@ -5,7 +5,7 @@ cur_path = os.path.dirname(os.path.realpath(__file__))
 def read_config(section_name,key_name,filename,update_value):
     con = configparser.ConfigParser()
     con.read(cur_path+'/'+filename, encoding='utf-8')
-    sections = con.sections()
+    # sections = con.sections()
     items = con.items(section_name)
     dict_items = dict(items)
     return dict_items[key_name]
