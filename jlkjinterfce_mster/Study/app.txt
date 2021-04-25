@@ -1,3 +1,4 @@
+https://gatewaytest.jinlingkeji.cn/v9/auth/sendsms?phone=15005163623
 https://gatewaytest.jinlingkeji.cn/v9/auth/login?phone=15005163623&code=8888
 Host: gatewaytest.jinlingkeji.cn
 Accept-Encoding: gzip, deflate, br
