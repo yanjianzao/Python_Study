@@ -19,7 +19,7 @@ class TestCase():
     def setup_class(self):
         print("开始进行登录")
         self.res = requests.get(url=url_test + login_path, params=date)
-        handldconfig.hand_config().set_config(section_name='App', key_name='token',filename="E:\github\Python_Study\jlkjinterfce_mster\Common\config.ini",update_value=self.res.json()['data'])
+        handldconfig.hand_config().set_config(section_name='App', key_name='token',filename=os.getcwd()+"\jlkjinterfce_mster\Common\config.ini",update_value=self.res.json()['data'])
         if self.res.json()['status'] == 200:
             print("登录成功")
     def teardown_class(self):
@@ -33,6 +33,7 @@ class TestCase():
     def test_two(self):
         assert 2 == 2
         print("用例2是否成功")
+
 
 
 
